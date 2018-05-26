@@ -1,0 +1,205 @@
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+Imports
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import 'reset';
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$white: #fff;
+$softWhite:#eeefe6;
+$cream:#DEDECE;
+$sageGreen:#ADBCAF;
+$green: #778370;
+$grey:#ccc;
+$black: #000;
+$orange: #D9691D;
+$rust: #7E300B;
+
+//Kreon:400, 700
+//Raleway:400, 700
+$headline-font: 'Kreon',
+sans-serif;
+$body-font:'Raleway',
+sans-serif;
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+    font-size: 1em;
+    line-height: 1.3;
+    font-family: $body-font;
+    color: $black;
+    background-color: $softWhite;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.s-hide {
+    display: none;
+}
+
+/* Responsive Grid ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.wrapper-full {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.col {
+    width: 100%;
+    float: left;
+    padding: 1%;
+    margin-top: 2%;
+    box-sizing: border-box;
+    //    background-color: pink;
+}
+
+/* Jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.jumbotron {
+    background-image: url(../images/utah.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myName {
+    font-size: 4em;
+    font-family: $headline-font;
+    line-height: 1;
+    text-align: center;
+}
+
+.nameBG {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5%;
+    width: 50%;
+}
+
+
+/* Navigation ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+nav {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    background-color: $sageGreen;
+    margin: 0;
+
+    ul {
+        width: 50%;
+        margin: 0 25%;
+        padding: 15px 0 0 0;
+        padding-right: 0;
+    }
+
+    li {
+        width: 20%;
+        padding-right: 2%;
+        list-style-type: none;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+}
+
+/* Greeting under jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.greeting {
+    background-color: $cream;
+    margin-top: 0;
+    padding: 2%;
+}
+
+/* Portfolio ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.webGallery {
+    background-color: $cream;
+    text-align: center;
+}
+
+/* Portfolio ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.about {
+    background-color: $white;
+}
+
+/* Footer ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    max-width: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: $green;
+    text-align: center;
+    p {
+        margin-bottom: 0;
+        padding-top: 1em;
+    }
+}
+
+.clearIt {
+    clear: both;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kreon', serif;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+    color: $black;
+}
+
+a:hover {
+    color: $rust;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––
+Imports
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import 'mediaQueries';
