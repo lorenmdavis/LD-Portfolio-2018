@@ -37,7 +37,7 @@ body {
     background-color: $softWhite;
 }
 
-img {
+.img-responsive {
     max-width: 100%;
     height: auto;
 }
@@ -55,6 +55,7 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    clear: both;
 }
 
 .wrapper-full {
@@ -63,15 +64,18 @@ img {
     max-width: none;
     margin: 0 auto;
     box-sizing: border-box;
+    clear: both;
+    overflow: hidden;
 }
 
 .col {
     width: 100%;
+    height: auto;
     float: left;
     padding: 1%;
     margin-top: 2%;
     box-sizing: border-box;
-    //    background-color: pink;
+    background-color: pink;
 }
 
 /* Jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -83,6 +87,7 @@ img {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 }
 
 .flex-center {
@@ -99,37 +104,60 @@ img {
 }
 
 .nameBG {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 5%;
     width: 50%;
 }
 
-
-/* Navigation ––––––––––––––––––––––––––––––––––––––––––––––– */
+/*********** NAVIGATION FOR MOBILE *************/
 
 nav {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    max-width: none;
-    box-sizing: border-box;
     background-color: $sageGreen;
+}
+
+ul {
     margin: 0;
+    padding: 0;
+}
 
-    ul {
-        width: 50%;
-        margin: 0 25%;
-        padding: 15px 0 0 0;
-        padding-right: 0;
-    }
+.bars {
+    float: right;
+    font-size: 1.5em;
+    padding: 2% 4%;
+    color: $white;
+    background-color: transparent;
+    border: none;
+}
 
-    li {
-        width: 20%;
-        padding-right: 2%;
-        list-style-type: none;
-        display: inline-block;
-        text-transform: uppercase;
-    }
+.bars:focus {
+    outline: 0;
+}
+
+.menu-small {
+    text-align: center;
+    clear: right;
+    list-style-type: none;
+}
+
+.menu-small li {
+    background-color: $sageGreen;
+    border-top: solid 1px $white;
+    padding: 2%;
+}
+
+.menu-small li:hover {
+    background-color: $green;
+    color: #666;
+}
+
+.menu-small a {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.menu-large {
+    display: none;
 }
 
 /* Greeting under jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -140,10 +168,9 @@ nav {
     padding: 2%;
 }
 
-/* Portfolio ––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Gallery ––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.webGallery {
-    background-color: $cream;
+.gallery {
     text-align: center;
 }
 
@@ -151,6 +178,13 @@ nav {
 
 .about {
     background-color: $white;
+    h4 {
+        font-weight: 700;
+    }
+}
+
+.about-text {
+    padding: 0 5%;
 }
 
 /* Footer ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -178,13 +212,16 @@ footer {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-h1,
+h1 {
+    font-family: 'Kreon', serif;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Kreon', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Links

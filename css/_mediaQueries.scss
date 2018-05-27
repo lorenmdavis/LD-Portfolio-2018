@@ -4,7 +4,42 @@
 /* M - Medium, Orange
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media (min-width: 750px) {
+@media (min-width: 550px) {
+
+    /*************** NAVIGATION FOR DESKTOP ***********************/
+    //    Hides hamburger menu
+    .bars,
+    .menu-small {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
+    ul {
+        margin: 0 25%;
+        width: 50%;
+    }
+    .menu-large {
+        display: block;
+        list-style-type: none;
+    }
+    .menu-large li {
+        display: inline-block;
+        padding: 5% 0;
+        width: 30%;
+        margin: 0 1%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .menu-large a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .menu-large a:hover {
+        color: #666;
+    }
+    /*************** END NAVIGATION ***********************/
     .m-show {
         display: block;
     }
@@ -14,7 +49,12 @@
     }
     .col {
         margin: 2% 1% 0 1%;
+    } //About
+    .about-text {
+        padding: 0;
     }
+
+    //    Grid System
     .m-one {
         width: 6.33333%;
     }
@@ -91,7 +131,7 @@
 /* L - Large, Yellow
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media (min-width: 970px) {
+@media (min-width: 850px) {
     .wrapper {
         width: 80%;
     }
@@ -175,7 +215,7 @@
 /* XL - Extra Large, Green
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media (min-width: 1170px) {
+@media (min-width: 1050px) {
     .wrapper {
         width: 80%;
     }

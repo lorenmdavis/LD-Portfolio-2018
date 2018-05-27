@@ -373,7 +373,7 @@ body {
   color: #000;
   background-color: #eeefe6; }
 
-img {
+.img-responsive {
   max-width: 100%;
   height: auto; }
 
@@ -387,21 +387,26 @@ img {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  clear: both; }
 
 .wrapper-full {
   position: relative;
   width: 100%;
   max-width: none;
   margin: 0 auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  clear: both;
+  overflow: hidden; }
 
 .col {
   width: 100%;
+  height: auto;
   float: left;
   padding: 1%;
   margin-top: 2%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: pink; }
 
 /* Jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
 .jumbotron {
@@ -410,7 +415,8 @@ img {
   height: 400px;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  z-index: -1; }
 
 .flex-center {
   display: flex;
@@ -424,30 +430,50 @@ img {
   text-align: center; }
 
 .nameBG {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 5%;
   width: 50%; }
 
-/* Navigation ––––––––––––––––––––––––––––––––––––––––––––––– */
+/*********** NAVIGATION FOR MOBILE *************/
 nav {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  max-width: none;
-  box-sizing: border-box;
+  background-color: #ADBCAF; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.bars {
+  float: right;
+  font-size: 1.5em;
+  padding: 2% 4%;
+  color: #fff;
+  background-color: transparent;
+  border: none; }
+
+.bars:focus {
+  outline: 0; }
+
+.menu-small {
+  text-align: center;
+  clear: right;
+  list-style-type: none; }
+
+.menu-small li {
   background-color: #ADBCAF;
-  margin: 0; }
-  nav ul {
-    width: 50%;
-    margin: 0 25%;
-    padding: 15px 0 0 0;
-    padding-right: 0; }
-  nav li {
-    width: 20%;
-    padding-right: 2%;
-    list-style-type: none;
-    display: inline-block;
-    text-transform: uppercase; }
+  border-top: solid 1px #fff;
+  padding: 2%; }
+
+.menu-small li:hover {
+  background-color: #778370;
+  color: #666; }
+
+.menu-small a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase; }
+
+.menu-large {
+  display: none; }
 
 /* Greeting under jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
 .greeting {
@@ -455,14 +481,18 @@ nav {
   margin-top: 0;
   padding: 2%; }
 
-/* Portfolio ––––––––––––––––––––––––––––––––––––––––––––––– */
-.webGallery {
-  background-color: #DEDECE;
+/* Gallery ––––––––––––––––––––––––––––––––––––––––––––––– */
+.gallery {
   text-align: center; }
 
 /* Portfolio ––––––––––––––––––––––––––––––––––––––––––––––– */
 .about {
   background-color: #fff; }
+  .about h4 {
+    font-weight: 700; }
+
+.about-text {
+  padding: 0 5%; }
 
 /* Footer ––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
@@ -483,13 +513,15 @@ footer {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1,
+h1 {
+  font-family: 'Kreon', serif; }
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Kreon', serif; }
+  font-family: 'Raleway', sans-serif; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -506,7 +538,40 @@ Imports
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* M - Medium, Orange
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 750px) {
+@media (min-width: 550px) {
+  /*************** NAVIGATION FOR DESKTOP ***********************/
+  .bars,
+  .menu-small {
+    display: none; }
+
+  nav {
+    width: 100%; }
+
+  ul {
+    margin: 0 25%;
+    width: 50%; }
+
+  .menu-large {
+    display: block;
+    list-style-type: none; }
+
+  .menu-large li {
+    display: inline-block;
+    padding: 5% 0;
+    width: 30%;
+    margin: 0 1%;
+    text-align: center;
+    box-sizing: border-box; }
+
+  .menu-large a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; }
+
+  .menu-large a:hover {
+    color: #666; }
+
+  /*************** END NAVIGATION ***********************/
   .m-show {
     display: block; }
 
@@ -516,6 +581,9 @@ Imports
 
   .col {
     margin: 2% 1% 0 1%; }
+
+  .about-text {
+    padding: 0; }
 
   .m-one {
     width: 6.33333%; }
@@ -589,7 +657,7 @@ Imports
     margin-left: 91.66666667%; } }
 /* L - Large, Yellow
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 970px) {
+@media (min-width: 850px) {
   .wrapper {
     width: 80%; }
 
@@ -668,7 +736,7 @@ Imports
     margin-left: 91.66666667%; } }
 /* XL - Extra Large, Green
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 1170px) {
+@media (min-width: 1050px) {
   .wrapper {
     width: 80%; }
 
