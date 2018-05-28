@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--    Link to jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--    Link to Masonry-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
 </head>
 
@@ -22,16 +24,16 @@
         <!-- we need two sets of unordered lists one for mobile and one for desktop -->
         <button class="bars"><span class="fas fa-bars"></span></button>
         <ul class="menu-small">
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="clearIt"></div>
         <!-- we need this clearfix otherwise the content will overlap with the menu -->
         <ul class="menu-large">
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -43,36 +45,68 @@
     <!--Greeting-->
     <div class="wrapper-full">
         <div class="greeting">
-            <p>Hi, my name is Denise. I create beautiful &amp; functional websites for small businesses. Below are a few services I provide:</p>
+            <p>Hi, my name is Loren &amp; welcome to my portfolio!. Below are a few web projects I've worked on during FEWD I &amp; II and some graphic design work from the past few years. </p>
         </div>
     </div>
 
     <!--# WORK-->
-    <div class="wrapper-full gallery">
+    <div id="work" class="wrapper-full gallery">
+        <h2>Web Design</h2>
+        <div class="row">
+            <div class="col m-six l-four xl-three wd">
+                <img class="img-responsive" src="images/gallery/webRWD.jpg" alt="GCQ logo">
+            </div>
+            <div class="col m-six l-four xl-three wd">
+                <img class="img-responsive" src="images/gallery/webBootstrap.jpg" alt="LV postcard">
+            </div>
+            <div class="col m-six l-four xl-three wd">
+                <img class="img-responsive" src="images/gallery/webJQuery.jpg" alt="AA ad">
+            </div>
+            <div class="col m-six l-four xl-three wd">
+                <img class="img-responsive" src="images/gallery/webRWDGroup.jpg" alt="Moonlight logo">
+            </div>
+        </div>
+    </div>
+
+    <div id="work" class="wrapper-full gallery">
         <h2>Graphic Design</h2>
         <div class="row">
             <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gcqLogo.jpg" alt="GCQ logo">
+                <img class="img-responsive" src="images/gallery/gcqLogo.jpg" alt="GCQ logo">
             </div>
             <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/lv-03.jpg" alt="LV postcard">
+                <img class="img-responsive" src="images/gallery/lv-03.jpg" alt="LV postcard">
             </div>
             <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gcqLogo.jpg">
+                <img class="img-responsive" src="images/gallery/aa-01.jpg" alt="AA ad">
             </div>
             <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gcqLogo.jpg">
+                <img class="img-responsive" src="images/gallery/ml-01.jpg" alt="Moonlight logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m-six l-four xl-three">
+                <img class="img-responsive" src="images/gallery/lv-02.jpg" alt="LV Neon logo">
+            </div>
+            <div class="col m-six l-four xl-three">
+                <img class="img-responsive" src="images/gallery/aa-03.jpg" alt="AA ad">
+            </div>
+            <div class="col m-six l-four xl-three">
+                <img class="img-responsive" src="images/gallery/lv-01.jpg" alt="LV distressed">
+            </div>
+            <div class="col m-six l-four xl-three">
+                <img class="img-responsive" src="images/gallery/aa-02.jpg" alt="AA Summer">
             </div>
         </div>
     </div>
 
     <!--# ABOUT-->
-    <div class="wrapper-full about">
+    <div id="about" class="wrapper-full about">
         <div class="row">
-            <div class="col s-hide m-show m-six">
+            <div class="col s-hide m-show m-six l-four">
                 <img class="img-responsive" src="images/loren.jpg" alt="selfie">
             </div>
-            <div class="col m-six about-text">
+            <div class="col m-six l-eight about-text">
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
@@ -80,13 +114,14 @@
     </div>
 
     <!--# CONTACT-->
-    <div class="wrapper contact">
+    <div id="contact" class="wrapper contact">
         <div class="col m-twelve">
-            <h2>Get In Touch</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
-            <i class="far fa-envelope"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+            <h2 class="center-text">Get In Touch</h2>
+            <div class="col m-space-four m-four">
+                <i class="far fa-envelope fa-3x"></i>
+                <i class="fab fa-twitter fa-3x"></i>
+                <i class="fab fa-instagram fa-3x"></i>
+            </div>
         </div>
     </div>
 

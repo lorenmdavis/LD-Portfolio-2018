@@ -70,12 +70,10 @@ body {
 
 .col {
     width: 100%;
-    height: auto;
     float: left;
     padding: 1%;
     margin-top: 2%;
-    box-sizing: border-box;
-    background-color: pink;
+    box-sizing: border-box; //    background-color: pink;
 }
 
 /* Jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -174,6 +172,10 @@ ul {
     text-align: center;
 }
 
+.wd {
+    //    background-color: $rust;
+}
+
 /* Portfolio ––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .about {
@@ -222,6 +224,18 @@ h4,
 h5,
 h6 {
     font-family: 'Raleway', sans-serif;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.fa-3x {
+    padding: 0 6%;
+}
+
+.fa-3x:hover {
+    color: $rust;
 }
 
 /* Links

@@ -401,12 +401,10 @@ body {
 
 .col {
   width: 100%;
-  height: auto;
   float: left;
   padding: 1%;
   margin-top: 2%;
-  box-sizing: border-box;
-  background-color: pink; }
+  box-sizing: border-box; }
 
 /* Jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
 .jumbotron {
@@ -523,6 +521,15 @@ h5,
 h6 {
   font-family: 'Raleway', sans-serif; }
 
+.center-text {
+  text-align: center; }
+
+.fa-3x {
+  padding: 0 6%; }
+
+.fa-3x:hover {
+  color: #7E300B; }
+
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
@@ -539,7 +546,7 @@ Imports
 /* M - Medium, Orange
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width: 550px) {
-  /*************** NAVIGATION FOR DESKTOP ***********************/
+  /*************** NAVIGATION FOR Large Screens ***********************/
   .bars,
   .menu-small {
     display: none; }

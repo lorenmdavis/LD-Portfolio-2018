@@ -6,7 +6,7 @@
 
 @media (min-width: 550px) {
 
-    /*************** NAVIGATION FOR DESKTOP ***********************/
+    /*************** NAVIGATION FOR Large Screens ***********************/
     //    Hides hamburger menu
     .bars,
     .menu-small {
@@ -52,9 +52,7 @@
     } //About
     .about-text {
         padding: 0;
-    }
-
-    //    Grid System
+    } //    Grid System
     .m-one {
         width: 6.33333%;
     }
