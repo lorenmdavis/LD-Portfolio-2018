@@ -59,7 +59,6 @@ body {
 }
 
 .wrapper-full {
-    position: relative;
     width: 100%;
     max-width: none;
     margin: 0 auto;
@@ -92,6 +91,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .myName {
@@ -168,25 +168,48 @@ ul {
 
 /* Gallery ––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.gallery {
+// Masonry
+.grid-item {
+    width: 98%;
+    margin: 1%;
+}
+
+//.grid-item--width2 { width: 400px; }
+.gallery h2 {
     text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 400;
+    color: $green;
+    letter-spacing: 3px;
+    padding: 2% 0;
+    width: 98%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
-.wd {
-    //    background-color: $rust;
-}
-
-/* Portfolio ––––––––––––––––––––––––––––––––––––––––––––––– */
+/* About ––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .about {
     background-color: $white;
-    h4 {
-        font-weight: 700;
-    }
 }
 
 .about-text {
     padding: 0 5%;
+}
+
+/* Contact ––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.contact h2 {
+    text-align: center;
+}
+
+.fa {
+    padding: 0 1% 2% 1%;
+}
+
+.fa:hover {
+    color: $rust;
 }
 
 /* Footer ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -210,7 +233,6 @@ footer {
     clear: both;
 }
 
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -226,18 +248,6 @@ h6 {
     font-family: 'Raleway', sans-serif;
 }
 
-.center-text {
-    text-align: center;
-}
-
-.fa-3x {
-    padding: 0 6%;
-}
-
-.fa-3x:hover {
-    color: $rust;
-}
-
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -247,6 +257,20 @@ a {
 
 a:hover {
     color: $rust;
+}
+
+a.topLink {
+    float: right;
+    padding: 2% 2% 0 0;
+    font-size: 0.75em;
+    color: $grey;
+    text-decoration: none;
+}
+
+a > img:hover {
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48);
+    box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48);
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––

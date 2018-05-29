@@ -6,129 +6,171 @@
     <title>Loren Davis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--link to Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Kreon:400,700|Raleway:400,700" rel="stylesheet">
-    <!--Link to custom CSS-->
-    <link rel="stylesheet" href="css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Kreon:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <!--     Link to fontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--       Link to Lightbox-->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!--Link to custom CSS-->
+    <link rel="stylesheet" href="css/base.css">
     <!--    Link to jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!--    Link to Masonry-->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
 </head>
 
 <body>
+
     <!--Nav Bar-->
-    <nav>
-        <!-- we need two sets of unordered lists one for mobile and one for desktop -->
+    <nav id="top">
         <button class="bars"><span class="fas fa-bars"></span></button>
         <ul class="menu-small">
-            <li><a href="#work">Work</a></li>
+            <li><a href="#work">Portfolio</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="clearIt"></div>
-        <!-- we need this clearfix otherwise the content will overlap with the menu -->
         <ul class="menu-large">
-            <li><a href="#work">Work</a></li>
+            <li><a href="#work">Portfolio</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!--Jumbotron and Introduction-->
+    <!--Jumbotron-->
     <header class="jumbotron clearIt flex-center">
         <p class="myName nameBG">Loren Davis</p>
     </header>
 
     <!--Greeting-->
-    <div class="wrapper-full">
+    <section class="wrapper-full">
         <div class="greeting">
-            <p>Hi, my name is Loren &amp; welcome to my portfolio!. Below are a few web projects I've worked on during FEWD I &amp; II and some graphic design work from the past few years. </p>
+            <p>Hi, my name is Loren &amp; welcome to my portfolio! Below are a few web projects I've worked on during FEWD I &amp; II and some graphic design work from the past few years. </p>
         </div>
-    </div>
+    </section>
 
-    <!--# WORK-->
-    <div id="work" class="wrapper-full gallery">
-        <h2>Web Design</h2>
-        <div class="row">
-            <div class="col m-six l-four xl-three wd">
-                <img class="img-responsive" src="images/gallery/webRWD.jpg" alt="GCQ logo">
-            </div>
-            <div class="col m-six l-four xl-three wd">
-                <img class="img-responsive" src="images/gallery/webBootstrap.jpg" alt="LV postcard">
-            </div>
-            <div class="col m-six l-four xl-three wd">
-                <img class="img-responsive" src="images/gallery/webJQuery.jpg" alt="AA ad">
-            </div>
-            <div class="col m-six l-four xl-three wd">
-                <img class="img-responsive" src="images/gallery/webRWDGroup.jpg" alt="Moonlight logo">
-            </div>
+    <!--WORK: WEB-->
+    <a href="#top" class="topLink">TOP</a>
+    <section id="work" class="wrapper-full gallery">
+        <div class="flex-center">
+            <h2>Web Design</h2>
         </div>
-    </div>
 
-    <div id="work" class="wrapper-full gallery">
-        <h2>Graphic Design</h2>
-        <div class="row">
-            <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gallery/gcqLogo.jpg" alt="GCQ logo">
+        <div class="row grid">
+            <div class="grid-item">
+                <a href="images/gallery/webRWD.jpg" data-lightbox="web-design" data-title="FEWD I - Responsive Website">
+                    <img class="img-responsive" src="images/gallery/webRWD.jpg" alt="SD Camping Website">
+                </a>
             </div>
-            <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gallery/lv-03.jpg" alt="LV postcard">
+            <div class="grid-item">
+                <a href="images/gallery/webBootstrap.jpg" data-lightbox="web-design" data-title="FEWD II - Bootstrap">
+                    <img class="img-responsive" src="images/gallery/webBootstrap.jpg" alt="Bootstrap website">
+                </a>
             </div>
-            <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gallery/aa-01.jpg" alt="AA ad">
+            <div class="grid-item">
+                <a href="images/gallery/webJQuery.jpg" data-lightbox="web-design" data-title="FEWD II - jQuery Mobile">
+                    <img class="img-responsive" src="images/gallery/webJQuery.jpg" alt="jQuery mobile website">
+                </a>
             </div>
-            <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gallery/ml-01.jpg" alt="Moonlight logo">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gallery/lv-02.jpg" alt="LV Neon logo">
-            </div>
-            <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gallery/aa-03.jpg" alt="AA ad">
-            </div>
-            <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gallery/lv-01.jpg" alt="LV distressed">
-            </div>
-            <div class="col m-six l-four xl-three">
-                <img class="img-responsive" src="images/gallery/aa-02.jpg" alt="AA Summer">
+            <div class="grid-item">
+                <a href="images/gallery/webRWDGroup.jpg" data-lightbox="web-design" data-title="FEWD I - Group Project">
+                <img class="img-responsive" src="images/gallery/webRWDGroup.jpg" alt="FEWD I group project">
+                </a>
             </div>
         </div>
-    </div>
+    </section>
+    <!--WORK: DESIGN-->
+    <section class="wrapper-full gallery">
+        <div class="flex-center">
+            <h2>Graphic Design</h2>
+        </div>
+        <div class="row grid">
+            <div class="grid-item">
+                <a href="images/gallery/gcqLogo.jpg" data-lightbox="graphic-design" data-title="Logo Design">
+                    <img class="img-responsive" src="images/gallery/gcqLogo.jpg" alt="GCQ logo">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/gallery/lv-03.jpg" data-lightbox="graphic-design" data-title="Product Line Art">
+                    <img class="img-responsive" src="images/gallery/lv-03.jpg" alt="LV postcard">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/gallery/aa-01.jpg" data-lightbox="graphic-design" data-title="Advertisement">
+                    <img class="img-responsive" src="images/gallery/aa-01.jpg" alt="AA ad">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/gallery/ml-01.jpg" data-lightbox="graphic-design" data-title="Logo Design">
+                    <img class="img-responsive" src="images/gallery/ml-01.jpg" alt="Moonlight logo">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/gallery/lv-02.jpg" data-lightbox="graphic-design" data-title="Product Line Art">
+                    <img class="img-responsive" src="images/gallery/lv-02.jpg" alt="LV Neon logo">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/gallery/aa-03.jpg" data-lightbox="graphic-design" data-title="Advertisement">
+                    <img class="img-responsive" src="images/gallery/aa-03.jpg" alt="AA ad">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/gallery/lv-01.jpg" data-lightbox="graphic-design" data-title="Product Line Art">
+                    <img class="img-responsive" src="images/gallery/lv-01.jpg" alt="LV distressed">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/gallery/aa-02.jpg" data-lightbox="graphic-design" data-title="Advertisement">
+                    <img class="img-responsive" src="images/gallery/aa-02.jpg" alt="AA Summer">
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!--# ABOUT-->
-    <div id="about" class="wrapper-full about">
+    <section id="about" class="wrapper-full about">
+        <a href="#top" class="topLink">TOP</a>
         <div class="row">
+            <!--My photo-->
             <div class="col s-hide m-show m-six l-four">
-                <img class="img-responsive" src="images/loren.jpg" alt="selfie">
+                <img class="img-responsive" src="images/loren.jpg" alt="Photo of me">
             </div>
+            <!--About Me-->
             <div class="col m-six l-eight about-text">
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--# CONTACT-->
-    <div id="contact" class="wrapper contact">
-        <div class="col m-twelve">
-            <h2 class="center-text">Get In Touch</h2>
-            <div class="col m-space-four m-four">
+    <a href="#top" class="topLink">TOP</a>
+    <section id="contact" class="wrapper-full contact">
+        <h2>Get In Touch</h2>
+        <div class="flex-center">
+           <a class="fa" href="mailto:lorenmichelledavis@gmail.com" target="_blank">
                 <i class="far fa-envelope fa-3x"></i>
+           </a>
+           <a class="fa" href="https://twitter.com/loren1660" target="_blank">
                 <i class="fab fa-twitter fa-3x"></i>
+           </a>
+           <a class="fa" href="https://www.instagram.com/loren.m.davis/" target="_blank">
                 <i class="fab fa-instagram fa-3x"></i>
-            </div>
+           </a>
+           
         </div>
-    </div>
+    </section>
 
+    <!--FOOTER-->
     <footer class="clearIt">
         <p>&copy; 2018</p>
     </footer>
-    <script src="scripts/script.js" type="text/javascript"></script>
+
+    <!--Link to JS Scripts-->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/lightbox.min.js"></script>
 </body>
 
 </html>

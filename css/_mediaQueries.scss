@@ -49,6 +49,10 @@
     }
     .col {
         margin: 2% 1% 0 1%;
+    } // Masonry, show 2up at medium screens
+    .grid-item {
+        width: 48%;
+        margin: 1%;
     } //About
     .about-text {
         padding: 0;
@@ -132,6 +136,10 @@
 @media (min-width: 850px) {
     .wrapper {
         width: 80%;
+    } // Masonry, show 3up at large screens
+    .grid-item {
+        width: 31%;
+        margin: 1%;
     }
     .l-one {
         width: 6.33333%;
@@ -216,6 +224,10 @@
 @media (min-width: 1050px) {
     .wrapper {
         width: 80%;
+    } // Masonry, show 4up at xl screens
+    .grid-item {
+        width: 23%;
+        margin: 1%;
     }
     .xl-one {
         width: 6.33333%;
