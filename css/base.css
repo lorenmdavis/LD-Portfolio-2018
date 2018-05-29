@@ -391,7 +391,6 @@ body {
   clear: both; }
 
 .wrapper-full {
-  position: relative;
   width: 100%;
   max-width: none;
   margin: 0 auto;
@@ -480,17 +479,38 @@ ul {
   padding: 2%; }
 
 /* Gallery ––––––––––––––––––––––––––––––––––––––––––––––– */
-.gallery {
-  text-align: center; }
+.grid-item {
+  width: 98%;
+  margin: 1%; }
 
-/* Portfolio ––––––––––––––––––––––––––––––––––––––––––––––– */
+.gallery h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 400;
+  color: #778370;
+  letter-spacing: 3px;
+  padding: 2% 0;
+  width: 98%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+
+/* About ––––––––––––––––––––––––––––––––––––––––––––––– */
 .about {
   background-color: #fff; }
-  .about h4 {
-    font-weight: 700; }
 
 .about-text {
   padding: 0 5%; }
+
+/* Contact ––––––––––––––––––––––––––––––––––––––––––––––– */
+.contact h2 {
+  text-align: center; }
+
+.fa {
+  padding: 0 1% 2% 1%; }
+
+.fa:hover {
+  color: #7E300B; }
 
 /* Footer ––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
@@ -521,15 +541,6 @@ h5,
 h6 {
   font-family: 'Raleway', sans-serif; }
 
-.center-text {
-  text-align: center; }
-
-.fa-3x {
-  padding: 0 6%; }
-
-.fa-3x:hover {
-  color: #7E300B; }
-
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
@@ -537,6 +548,18 @@ a {
 
 a:hover {
   color: #7E300B; }
+
+a.topLink {
+  float: right;
+  padding: 2% 2% 0 0;
+  font-size: 0.75em;
+  color: #ccc;
+  text-decoration: none; }
+
+a > img:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48);
+  box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48); }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––
 Imports
@@ -588,6 +611,10 @@ Imports
 
   .col {
     margin: 2% 1% 0 1%; }
+
+  .grid-item {
+    width: 48%;
+    margin: 1%; }
 
   .about-text {
     padding: 0; }
@@ -668,6 +695,10 @@ Imports
   .wrapper {
     width: 80%; }
 
+  .grid-item {
+    width: 31%;
+    margin: 1%; }
+
   .l-one {
     width: 6.33333%; }
 
@@ -746,6 +777,10 @@ Imports
 @media (min-width: 1050px) {
   .wrapper {
     width: 80%; }
+
+  .grid-item {
+    width: 23%;
+    margin: 1%; }
 
   .xl-one {
     width: 6.33333%; }
