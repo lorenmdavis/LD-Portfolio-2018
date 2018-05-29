@@ -31,14 +31,21 @@
         text-align: center;
         box-sizing: border-box;
     }
+
     .menu-large a {
         text-decoration: none;
-        color: #fff;
         text-transform: uppercase;
+        color: $white;
+        letter-spacing: 1px;
+        transition: all 1s ease;
     }
+
     .menu-large a:hover {
-        color: #666;
+        color: $white;
+        letter-spacing: 2px;
+        text-shadow: 0px 0px 7px #333;
     }
+
     /*************** END NAVIGATION ***********************/
     .m-show {
         display: block;

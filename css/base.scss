@@ -9,12 +9,13 @@ Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 $white: #fff;
+$black: #000;
 $softWhite:#eeefe6;
 $cream:#DEDECE;
 $sageGreen:#ADBCAF;
 $green: #778370;
 $grey:#ccc;
-$black: #000;
+$darkGrey: #666;
 $orange: #D9691D;
 $rust: #7E300B;
 
@@ -34,7 +35,8 @@ body {
     line-height: 1.3;
     font-family: $body-font;
     color: $black;
-    background-color: $softWhite;
+    background-image: url(../images/dust_scratches-softWhite.png);
+    /* Background pattern from Toptal Subtle Patterns */
 }
 
 .img-responsive {
@@ -72,7 +74,7 @@ body {
     float: left;
     padding: 1%;
     margin-top: 2%;
-    box-sizing: border-box; //    background-color: pink;
+    box-sizing: border-box;
 }
 
 /* Jumbotron ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -143,15 +145,18 @@ ul {
     padding: 2%;
 }
 
-.menu-small li:hover {
-    background-color: $green;
-    color: #666;
-}
-
 .menu-small a {
     text-decoration: none;
-    color: $white;
     text-transform: uppercase;
+    color: $white;
+    letter-spacing: 1px;
+    transition: all 1s ease;
+}
+
+.menu-small a:hover {
+    color: $white;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 7px #333;
 }
 
 .menu-large {
@@ -164,6 +169,7 @@ ul {
     background-color: $cream;
     margin-top: 0;
     padding: 2%;
+    font-size: 1.125em;
 }
 
 /* Gallery ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -206,10 +212,11 @@ ul {
 
 .fa {
     padding: 0 1% 2% 1%;
+    transition: all 1s ease;
 }
 
 .fa:hover {
-    color: $rust;
+    color: $orange;
 }
 
 /* Footer ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -226,6 +233,7 @@ footer {
     p {
         margin-bottom: 0;
         padding-top: 1em;
+        color: $sageGreen;
     }
 }
 
@@ -256,21 +264,26 @@ a {
 }
 
 a:hover {
-    color: $rust;
+    color: $darkGrey;
 }
 
 a.topLink {
     float: right;
     padding: 2% 2% 0 0;
     font-size: 0.75em;
-    color: $grey;
+    color: $green;
     text-decoration: none;
 }
 
+a > img {
+    transition: all 1s ease;
+}
+
 a > img:hover {
-    -webkit-box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48);
-    -moz-box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48);
-    box-shadow: 0px 0px 5px 1px rgba(186, 186, 186, 0.48);
+    -webkit-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.62);
+
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––
